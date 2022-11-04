@@ -6,29 +6,51 @@
         <title>site do braga</title>
         <script src="bd.js"></script>
         <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Ola mundo</h1>
-        <div>
-            <h3>Conversor Celsius >> Fahrenheit</h3>
-            <input
-                type="number"
-                placeholder="temperatura em celsius"
-                id="temperatura-celsius"
-            />
-            <input
-                type="button"
-                value="Converter!"
-                onclick="converteParaFahrenheit()"
-            />
+        <header>
+            <h1>Emerson</h1>
+        </header>
+        <main>
+            <section>
+                <h3>Conversor Celsius >> Fahrenheit</h3>
+                <input
+                    type="number"
+                    placeholder="temperatura em celsius"
+                    id="temperatura-celsius"
+                />
+                <input
+                    type="button"
+                    value="Converter!"
+                    onclick="converteParaFahrenheit()"
+                />
 
-            <input type="text" id="resultado-fahrenheit" readonly />
-            <!-- <inputtype ="text" id="nome usuario" placeholder="nome" /> -->
-        </div>
-        <div>
-            <input type="text" id="nome-usuario" placehalder="Nome" />
-            <input type="'number" id="idade-usuario" placeholder="idade" />
-            <input type="button" value="Salvar" onclick="salvarInfo()" />
-        </div>
+                <input type="text" id="resultado-fahrenheit" readonly />
+                <!-- <inputtype ="text" id="nome usuario" placeholder="nome" /> -->
+            </section>
+            <section>
+                <h3>registro bd</h3>
+                <input type="text" id="nome-usuario" placehalder="Nome" />
+                <input type="'number" id="idade-usuario" placeholder="idade" />
+                <input type="button" value="Salvar" onclick="salvarInfo()" />
+            </section>
+            <section>
+                <input
+                    type="text"
+                    id="pesquisa-nome-usuario"
+                    placeholder="Nome"
+                />
+                <input type="button"
+                 value="pesquisar!"
+                onclick="pesquisaPorNome()"/>
+                <input
+                    type="text"
+                    id="resultado-pesquisa"
+                    placeholder="Resultado Idade"
+                    readonly
+                />
+            </section>
+        </main>
     </body>
 </html>
